@@ -5,14 +5,14 @@ pipeline {
     }
     stages {
 	    stage('MavenVersion') {
-            steps {
-                sh 'mvn --version'
+                steps {
+                   sh 'mvn --version'
+              }
             }
-        }
-        stage('Build') {
-            steps {
-                sh 'mvn install -Dmaven.test.skip=true'
+            stage('Build') {
+                steps {
+                   sh 'mvn install -Dmaven.test.skip=true'
+                }
             }
-        }
-    }
+      }
 }
