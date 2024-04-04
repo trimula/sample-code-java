@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage('sequential'){
+            steps{
+                echo 'hello this is sai'
+            }
+        }
+    }
+}
